@@ -31,7 +31,7 @@ namespace ASSIGNMENT3
 
             //Finding the Prime minister of 2004
             Primeminister PM2004 = dictionaryPrimeminister[2004];
-            Console.WriteLine("\nThe Prime minister of 2004 is : " + PM2004.Name);
+            Console.WriteLine($"\nThe Prime minister of 2004 is : {PM2004.Name}");
 
             //Adding current prime minister in the dictionary
             Primeminister Primeminister4 = new Primeminister()
@@ -47,7 +47,7 @@ namespace ASSIGNMENT3
             foreach (var item in dictionaryPrimeminister)
             {
                 Primeminister PM = dictionaryPrimeminister[item.Key];
-                Console.WriteLine("[" + PM.Name + ", " + item.Key + "]");
+                Console.WriteLine($"[{PM.Name}, {item.Key}]");
             }
 
             //Here Sorting the dictionary by year
@@ -55,7 +55,7 @@ namespace ASSIGNMENT3
             foreach (var item in dictionaryPrimeminister.OrderBy(k => k.Key))
             {
                 Primeminister PM = dictionaryPrimeminister[item.Key];
-                Console.WriteLine("[" + PM.Name + ", " + item.Key + "]");
+                Console.WriteLine($"[{PM.Name}, {item.Key}]");
             }
         }
 
